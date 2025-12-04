@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
+  standalone: true,
   imports: [],
   templateUrl: './landing-page.html',
-  styleUrl: './landing-page.css',
+  styleUrls: ['./landing-page.css'],
 })
-export class LandingPage {
-
-}
+export class LandingPage {}
