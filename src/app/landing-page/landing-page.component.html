@@ -1,20 +1,259 @@
-<section class="landing">
-  <header class="hero">
-    <h1 class="title">Welcome to the Landing Page</h1>
-    <p class="subtitle">This component is ready for your content.</p>
-  </header>
-  <div class="callouts">
-    <div class="card">
-      <h2>Clean Setup</h2>
-      <p>Built as a standalone Angular component with its own template and styles.</p>
-    </div>
-    <div class="card">
-      <h2>Easy Customization</h2>
-      <p>Update the layout, colors, and copy to match your brand.</p>
-    </div>
-    <div class="card">
-      <h2>Ready to Route</h2>
-      <p>Wire this component into the router to make it the first page visitors see.</p>
-    </div>
-  </div>
+<section class="page">
+    <header class="top-nav">
+        <div class="brand">
+            <div class="logo">R</div>
+            <div class="brand-text">
+                <p class="brand-label">Ранок</p>
+                <p class="brand-sub">Онлайн-платформа для дітей</p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#schedule">Розклад</a>
+            <a href="#classes">Курси</a>
+            <a href="#community">Спільнота</a>
+            <a href="#footer">Контакти</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="btn ghost">Увійти</button>
+            <button class="btn primary">Записатися</button>
+        </div>
+    </header>
+
+    <section class="hero" id="top">
+        <div class="hero-copy">
+            <div class="eyebrow">Ранкові уроки без стресу</div>
+            <h1>Створюємо теплий простір для щоденного навчання</h1>
+            <p class="lede">
+                Ліва частина макету присвячена головній сторінці: ми показуємо турботливу атмосферу, зручний розклад і підтримку наставників. Весь контент адаптується до вашого екрана, зберігаючи легкість і світло ранку.
+            </p>
+            <div class="tag-row">
+                <span class="tag">STEM</span>
+                <span class="tag">Мистецтво</span>
+                <span class="tag">Мови</span>
+                <span class="tag">Soft Skills</span>
+            </div>
+            <div class="hero-actions">
+                <button class="btn primary">Почати навчання</button>
+                <button class="btn secondary">Дивитись програму</button>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <p class="stat-number">24/7</p>
+                    <p class="stat-label">підтримка наставників</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">360+</p>
+                    <p class="stat-label">уроків на платформі</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">98%</p>
+                    <p class="stat-label">задоволених батьків</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="sunrise"></div>
+            <div class="glass-card">
+                <div class="card-header">
+                    <div>
+                        <p class="mini">Ранковий блок</p>
+                        <p class="card-title">«Доброго ранку, клас!»</p>
+                    </div>
+                    <span class="pill">live</span>
+                </div>
+                <div class="teacher-row">
+                    <div class="avatar" aria-hidden="true"></div>
+                    <div>
+                        <p class="teacher-name">Олена Мельник</p>
+                        <p class="teacher-role">Наставниця 3-Б</p>
+                    </div>
+                    <button class="tiny-btn">Приєднатися</button>
+                </div>
+                <div class="schedule-preview">
+                    <div class="schedule-item">
+                        <div>
+                            <p class="time">08:30</p>
+                            <p class="subject">Математика</p>
+                        </div>
+                        <span class="chip ghost">Zoom</span>
+                    </div>
+                    <div class="schedule-item">
+                        <div>
+                            <p class="time">09:10</p>
+                            <p class="subject">Арт-терапія</p>
+                        </div>
+                        <span class="chip">Studio</span>
+                    </div>
+                    <div class="schedule-item">
+                        <div>
+                            <p class="time">09:45</p>
+                            <p class="subject">Англійська</p>
+                        </div>
+                        <span class="chip ghost">Play</span>
+                    </div>
+                </div>
+            </div>
+            <div class="note-card">
+                <p class="note-title">Теплі ритуали</p>
+                <p class="note-text">Дихальні вправи, музика та привітання допомагають зосередитись.</p>
+                <div class="placeholder" aria-hidden="true">480 × 320</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="class-grid" id="schedule">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Розклад</p>
+                <h2>Класні картки на цей тиждень</h2>
+            </div>
+            <button class="btn ghost">Повний розклад</button>
+        </div>
+        <div class="grid">
+            <article class="class-card">
+                <div class="card-top">
+                    <p class="time">Пн, 08:30</p>
+                    <span class="label green">Молодша школа</span>
+                </div>
+                <h3>Літературні історії</h3>
+                <p class="card-text">Читаємо разом, обговорюємо героїв і створюємо власні кінцівки.</p>
+                <div class="card-meta">
+                    <span>Учитель: Софія</span>
+                    <span>45 хв</span>
+                </div>
+            </article>
+            <article class="class-card">
+                <div class="card-top">
+                    <p class="time">Вт, 09:10</p>
+                    <span class="label orange">Середня школа</span>
+                </div>
+                <h3>Наука через досвід</h3>
+                <p class="card-text">Прості експерименти й дослідження, що можна повторити вдома.</p>
+                <div class="card-meta">
+                    <span>Учитель: Ігор</span>
+                    <span>50 хв</span>
+                </div>
+            </article>
+            <article class="class-card">
+                <div class="card-top">
+                    <p class="time">Ср, 09:45</p>
+                    <span class="label blue">Творчі студії</span>
+                </div>
+                <h3>Акварельні світанки</h3>
+                <p class="card-text">Навчаємось м'яким переходам кольорів і працюємо зі світлом.</p>
+                <div class="card-meta">
+                    <span>Учитель: Марія</span>
+                    <span>40 хв</span>
+                </div>
+            </article>
+            <article class="class-card">
+                <div class="card-top">
+                    <p class="time">Чт, 08:30</p>
+                    <span class="label pink">Комунікація</span>
+                </div>
+                <h3>Ранкові діалоги</h3>
+                <p class="card-text">Вчимось слухати одне одного, розвиваємо емпатію й довіру.</p>
+                <div class="card-meta">
+                    <span>Учитель: Катерина</span>
+                    <span>35 хв</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="story" id="classes">
+        <div class="story-copy">
+            <p class="eyebrow">Атмосфера</p>
+            <h2>Текстові блоки про турботу та структуру</h2>
+            <p>
+                Усі блоки створені у flex/grid як у макеті: багато повітря, плавні кути й градієнти, що нагадують світанок. Контент легко читається на будь-яких екранах, а кнопки та картки мають однакову систему відступів.
+            </p>
+            <p>
+                Ми фокусуємось на взаємодії: короткі тези, списки занять та замітки наставників. Це допомагає швидко зорієнтуватись у головному та не загубити деталі.
+            </p>
+            <div class="bullet-row">
+                <div class="bullet">Регулярні зустрічі з куратором</div>
+                <div class="bullet">Ненав'язливі нагадування про уроки</div>
+                <div class="bullet">Спільні ранкові ритуали</div>
+            </div>
+        </div>
+        <div class="story-cards">
+            <div class="info-card">
+                <p class="info-kicker">Картка наставника</p>
+                <h3>Щотижневий фідбек</h3>
+                <p class="info-text">Додаємо підсумок успіхів, щоб батьки бачили прогрес у реальному часі.</p>
+                <div class="placeholder small" aria-hidden="true">260 × 180</div>
+            </div>
+            <div class="info-card">
+                <p class="info-kicker">Картка прогресу</p>
+                <h3>Баланс навантаження</h3>
+                <p class="info-text">Система підлаштовує темп занять та підказує, де варто зробити паузу.</p>
+                <div class="progress-bars">
+                    <div class="bar"><span style="width: 78%"></span></div>
+                    <div class="bar"><span style="width: 54%"></span></div>
+                    <div class="bar"><span style="width: 92%"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community" id="community">
+        <div class="community-text">
+            <p class="eyebrow">Блок інформації</p>
+            <h2>Спільнота, що підтримує зранку</h2>
+            <p class="muted">
+                Картки з фактами та нотатками повторюють авто-лейаути: однакова висота, чіткі відступи, легка типографіка.
+            </p>
+        </div>
+        <div class="community-grid">
+            <div class="fact-card">
+                <p class="fact-number">12</p>
+                <p class="fact-label">онлайн-класів щотижня</p>
+            </div>
+            <div class="fact-card">
+                <p class="fact-number">7</p>
+                <p class="fact-label">наставників у команді</p>
+            </div>
+            <div class="fact-card">
+                <p class="fact-number">4</p>
+                <p class="fact-label">формати занять</p>
+            </div>
+            <div class="note-card compact">
+                <p class="note-title">Нотатка дня</p>
+                <p class="note-text">Слухайте улюблену мелодію під час підготовки до уроків.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer-brand">
+            <div class="logo">R</div>
+            <div>
+                <p class="brand-label">Ранок</p>
+                <p class="brand-sub">Світло навчання щодня</p>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div>
+                <p class="footer-title">Меню</p>
+                <a href="#top">Головна</a>
+                <a href="#schedule">Розклад</a>
+                <a href="#classes">Курси</a>
+            </div>
+            <div>
+                <p class="footer-title">Підтримка</p>
+                <a href="#community">Спільнота</a>
+                <a href="#footer">Контакти</a>
+                <a href="mailto:hello@ranok.school">hello@ranok.school</a>
+            </div>
+        </div>
+        <div class="footer-cta">
+            <p class="footer-title">Новини зранку</p>
+            <div class="footer-form">
+                <input aria-label="Email" placeholder="Email" />
+                <button class="btn primary">Підписатися</button>
+            </div>
+            <p class="muted">Отримуйте підбірку корисних матеріалів щопонеділка.</p>
+        </div>
+    </footer>
 </section>
