@@ -1,20 +1,180 @@
-<section class="landing">
-  <header class="hero">
-    <h1 class="title">Welcome to the Landing Page</h1>
-    <p class="subtitle">This component is ready for your content.</p>
+<div class="page">
+  <header class="header">
+    <div class="logo">
+      <img src="assets/ranok-logo.svg" alt="Видавництво Ранок" class="logo-img" />
+      <span class="sr-only">Видавництво Ранок</span>
+    </div>
+    <nav class="menu">
+      <a href="#class1">1 клас</a>
+      <a href="#class2">2 клас</a>
+      <a href="#class3">3 клас</a>
+    </nav>
   </header>
-  <div class="callouts">
-    <div class="card">
-      <h2>Clean Setup</h2>
-      <p>Built as a standalone Angular component with its own template and styles.</p>
+
+  <main class="content">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag">#БільшеНіжПідручник</p>
+        <h1>Підручники для початкової школи</h1>
+        <p class="lead">
+          Добірка сучасних підручників «Ранок» для 1–4 класів НУШ із методичною підтримкою, електронними
+          ресурсами та заходами для педагогів.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn primary">Переглянути каталог</button>
+          <button class="btn ghost">Замовити консультацію</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-books.png" alt="Підручники Ранок" />
+      </div>
+    </section>
+
+    <section class="class-cards" aria-label="Підручники для класів">
+      <div class="class-card" id="class1">
+        <div class="class-number">1</div>
+        <img src="assets/class-1.png" alt="Підручники для 1 класу" />
+        <button class="btn secondary">Переглянути</button>
+      </div>
+      <div class="class-card" id="class2">
+        <div class="class-number">2</div>
+        <img src="assets/class-2.png" alt="Підручники для 2 класу" />
+        <button class="btn secondary">Переглянути</button>
+      </div>
+      <div class="class-card" id="class3">
+        <div class="class-number">3</div>
+        <img src="assets/class-3.png" alt="Підручники для 3 класу" />
+        <button class="btn secondary">Переглянути</button>
+      </div>
+      <div class="class-card" id="class4">
+        <div class="class-number">4</div>
+        <img src="assets/class-4.png" alt="Підручники для 4 класу" />
+        <button class="btn secondary">Переглянути</button>
+      </div>
+    </section>
+
+    <section class="info-block">
+      <h2 class="highlight">Шановні освітяни, колеги та колежанки!</h2>
+      <p>
+        У 2025 році стартує вибір електронних версій оригінал-макетів підручників для учнів з навчанням
+        українською мовою та мовами національних меншин.
+      </p>
+      <p>
+        На цій сторінці ви знайдете інформацію про наші підручники та етапи проведення конкурсу НУШ 2025.
+        Долучайтеся та обирайте найкраще для своїх учнів.
+      </p>
+    </section>
+
+    <section class="process">
+      <h2>Конкурс підручників НУШ 2025: як відбувається відбір?</h2>
+      <div class="process-grid">
+        <article class="process-card">
+          <h3>Підручники для 1–3 класів</h3>
+          <p>Кожна школа обирає один комплект з кількох запропонованих варіантів для кожного предмета.</p>
+          <ul>
+            <li>Перегляд електронних оригінал-макетів.</li>
+            <li>Обговорення в педагогічній спільноті.</li>
+            <li>Вибір фаворита для замовлення друкованих примірників.</li>
+          </ul>
+        </article>
+        <article class="process-card">
+          <h3>Підручники для 4 класу</h3>
+          <p>Відбір триває у два етапи, щоб школи отримали найкраще рішення.</p>
+          <ul>
+            <li>Первинне рейтингове оцінювання та обрання трьох варіантів.</li>
+            <li>Фінальне голосування за один комплект для друку.</li>
+            <li>Підготовка до забезпечення учнів друкованими підручниками.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="offerings">
+      <h2>Що пропонують підручники НУШ від видавництва «Ранок»?</h2>
+      <div class="offering-grid">
+        <article class="offering-card">
+          <h3>Електронні освітні додатки</h3>
+          <div class="offering-body">
+            <p>
+              Усі підручники НУШ «Ранок» мають інтерактивні додатки, які допомагають зробити уроки цікавішими
+              та сучаснішими.
+            </p>
+            <ul class="icon-list">
+              <li>Слухай: аудіо, мелодії, пісні, диктанти.</li>
+              <li>Дивись: анімації, відео, презентації, вебсторінки.</li>
+              <li>Вивчай: ілюстрації, завдання, карти, комікси.</li>
+              <li>Грай: інтерактивні ігри та завдання.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="offering-card">
+          <h3>Методична підтримка</h3>
+          <div class="offering-body">
+            <p>
+              Учителі отримують готові матеріали й поради для проведення уроків та виконання вимог НУШ.
+            </p>
+            <ul class="icon-list">
+              <li>Розробки уроків, календарне планування, інструктажі.</li>
+              <li>Методичні рекомендації з оцінювання навчальних досягнень.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="offering-card">
+          <h3>Навчальні й методичні заходи</h3>
+          <div class="offering-body">
+            <p>
+              Спільно з авторами проводимо зустрічі та вебінари, щоб підтримати педагогів у роботі з нашими
+              підручниками.
+            </p>
+            <ul class="icon-list">
+              <li>Навчальні зустрічі, консультації, воркшопи.</li>
+              <li>Авторські вебінари з рекомендаціями щодо використання підручників.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="participation">
+      <h2>Як взяти участь у виборі підручників НУШ 2025</h2>
+      <div class="participation-grid">
+        <article class="participation-card">
+          <h3>Для вчителів</h3>
+          <p>
+            Перегляньте наші електронні макети, обговоріть їх з колегами та рекомендуйте комплект, який відповідає
+            потребам вашого класу.
+          </p>
+        </article>
+        <article class="participation-card">
+          <h3>Для адміністрації</h3>
+          <p>
+            Здійсніть офіційний вибір на рівні закладу освіти та оформіть замовлення на друковані підручники для
+            учнів.
+          </p>
+        </article>
+      </div>
+      <div class="join">
+        <p class="join-text">Приєднуйтесь до нас у соцмережах</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook" class="social-circle">f</a>
+          <a href="#" aria-label="Instagram" class="social-circle">in</a>
+          <a href="#" aria-label="YouTube" class="social-circle">▶</a>
+          <a href="#" aria-label="Telegram" class="social-circle">tg</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">
+      <img src="assets/ranok-logo.svg" alt="Видавництво Ранок" class="logo-img" />
+      <span class="sr-only">Видавництво Ранок</span>
     </div>
-    <div class="card">
-      <h2>Easy Customization</h2>
-      <p>Update the layout, colors, and copy to match your brand.</p>
+    <div class="socials footer-socials">
+      <a href="#" aria-label="Facebook" class="social-circle">f</a>
+      <a href="#" aria-label="Instagram" class="social-circle">in</a>
+      <a href="#" aria-label="YouTube" class="social-circle">▶</a>
+      <a href="#" aria-label="Telegram" class="social-circle">tg</a>
     </div>
-    <div class="card">
-      <h2>Ready to Route</h2>
-      <p>Wire this component into the router to make it the first page visitors see.</p>
-    </div>
-  </div>
-</section>
+  </footer>
+</div>
